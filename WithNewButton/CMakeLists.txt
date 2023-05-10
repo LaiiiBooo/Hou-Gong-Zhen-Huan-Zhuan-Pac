@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.23)
-project(WithNew)
+project(Hou-Gong-Zhen-Huan-Zhuan-Pac)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
@@ -8,7 +8,7 @@ set(SOURCE_FILES main.cpp)
 include_directories(Main)
 include_directories(Resources)
 
-add_executable(WithNew
+add_executable(Hou-Gong-Zhen-Huan-Zhuan-Pac
         Main/Headers/Background.hpp
         Main/Headers/Button.h
         Main/Headers/ConvertSketch.h
@@ -29,5 +29,5 @@ add_executable(WithNew
 
 find_package(SFML 2.5 COMPONENTS system window graphics network audio REQUIRED)
 include_directories(${SFML_INCLUDE_DIRS})
-target_link_libraries(WithNew sfml-system sfml-window sfml-graphics sfml-audio sfml-network)
+target_link_libraries(Hou-Gong-Zhen-Huan-Zhuan-Pac sfml-system sfml-window sfml-graphics sfml-audio sfml-network)
 
